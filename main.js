@@ -18,3 +18,27 @@ const leapYear={
   November:30,
   December:31
 }
+function totalProduction(){
+let total=0
+Object.keys(shedData).forEach(key=>{
+  total+=shedData[key]
+})
+return total
+}
+console.log(totalProduction())
+
+function brooksideData(price,time){
+  if(time.toUpperCase()==="WEEKLY"){
+    return `Your weekly income will be Ksh${totalProduction()*7*price}`
+  }else if(time.toUpperCase()==="YEARLY"){
+    return `Your yearly income will be Ksh${totalProduction()*365*price}`
+
+  }
+}
+function leapYearIncome(price){
+
+return Object.keys(leapYear).map(key=>{
+return `Your income for ${key} is Ksh ${leapYear[key]*totalProduction()*price}`
+})
+}
+console.log(leapYearIncome(45))
