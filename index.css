@@ -53,10 +53,23 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 50%;
+  width: 60%;
   margin-right: 20px;
   box-shadow: 0px 0px 8px darkgray;
   border-radius: 4px;
   font-size: 16px;
      
+}
+.data-input   #sheds{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 25px;
+  
+}
+.data-input > form{
+  width: 120%;
+  padding: 20px;
+  
 }
