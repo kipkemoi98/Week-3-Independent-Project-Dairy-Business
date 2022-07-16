@@ -69,7 +69,14 @@ body{
   
 }
 .data-input > form{
-  width: 120%;
+  width: 100%;
   padding: 20px;
+  
+}
+/* Button */
+form > button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 100%;
   
 }
