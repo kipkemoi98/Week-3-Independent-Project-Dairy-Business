@@ -74,9 +74,34 @@ body{
   
 }
 /* Button */
-form > button {
+.form > button{
   margin-bottom: 20px;
   padding: 10px 20px;
   width: 100%;
+}
+form > div > input[type="number"]{
+  height: 40px;
+   
+}
+@media screen and (max-width: 1080px) {
+  .milk-Produce{
+      display: flex;
+      flex-direction: column;  
+  }
+
+  .data-input {
+      width: 100%;
+      margin-bottom: 30px; 
+  }
+
+  .output{
+      width: 100%;
+     
+  }
   
 }
+form > button[type = "submit"], form > button[type = "reset"]{
+  background: none;
+  color: white;
+  border: 1px solid white;
+} 
