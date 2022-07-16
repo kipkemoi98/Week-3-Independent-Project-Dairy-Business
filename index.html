@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ed4535d2a6.js" cross origin="anonymous"></script>
+    <title>Dairy Business Productions</title>
+</head>
+
+<body>
+    <section>
+        <h3 id="heading">Dairy Business Productions</h3>
+        <div class="milk-produce">
+            <div class="data-input">
+                <form action="submit" onsubmit="totalproduce();">
+                    <h4>Fill and submit the following form to get your total produce</h4>
+                    <div id="sheds">
+                        <label for="shed-A">Shed A: Milk (per Litre)</label>
+                        <input id="shed-A" type="number" min="0" required>
+                    </div>
+
+                    <div id="sheds">
+                        <label for="shed-B">Shed A: Milk (per Litre)</label>
+                        <input id="shed-B" type="number" min="0" required>
+                    </div>
+                    <div id="sheds">
+                        <label for="shed-C">Shed A: Milk (per Litre)</label>
+                        <input id="shed-C" type="number" min="0" required>
+                    </div>
+                    <div id="sheds">
+                        <label for="shed-D">Shed A: Milk (per Litre)</label>
+                        <input id="shed-D" type="number" min="0" required>
+                    </div>
+                    <button type="submit-btn">Submit</button>
+                    <button id="reset-results" type="reset" onclick="resetthepage();">Reset</button>
+                </form>
+            </div>
+            <div class="output">
+                <h2 id="output-pro">Productions Summary</h2>
+                <hr>
+                <p id="output-data"></p>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
