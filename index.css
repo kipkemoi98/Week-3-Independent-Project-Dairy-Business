@@ -8,15 +8,15 @@ body{
   background-image: url(assets/cowimage.jpeg);
    background-color: #1e2f6e;
 }
-/* TITLE */
-#title{
+/* HEADINGS*/
+#heading{
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow:0px 0px 10px rgb(150, 179, 169);
+  box-shadow:1px 1px 10px gray;
   background-color: rgb(25, 49, 41);
   color: white;
-  height: 60px;
+  height: 80px;
   margin-top: 0px;
 
 }
