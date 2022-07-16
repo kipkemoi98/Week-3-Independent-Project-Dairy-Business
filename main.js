@@ -6,7 +6,7 @@ const shedData={
 }
 const leapYear={
   January:31,
-  February:29,
+  February:28,
   March:31,
   April:30,
   May:31,
