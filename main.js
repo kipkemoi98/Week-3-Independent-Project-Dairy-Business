@@ -1,23 +1,31 @@
 let selling_price = 45; //cost of milk per litre
-var sheds = [{
-        name: "shed A",
+var sheds = {
+        name: "shed-A",
         averageProduction: 510,
     },
     {
-        name: "shed B",
+        name: "shed-B",
         averageProduction: 308,
     },
     {
-        name: "shed C",
+        name: "shed-C",
         averageProduction: 486,
     },
     {
-        name: "shed D",
+        name: "shed-D",
         averageProduction: 572,
     },
-];
+document.getElementById("submit-btn").onclick=function(){
+  let sheds={
+  shedA: document.getElementById("shed-A"),
+  shedA: document.getElementById("shed-B"),
+  shedA: document.getElementById("shed-C"),
+  shedA: document.getElementById("shed-D"),
+  }
+  console.log(sheds);
+}
 
-var allProduction = function(e) {
+var milkproduce= function(e) {
     let sum = 0;
     for (let i = 0; i < e.length; i++) {
         sum += e[i].averageProduction;
@@ -82,3 +90,9 @@ function incomePerMonth(selling_price) {
     }
 }
 incomePerMonth(sellingPricePerLitre);
+  let sheds={
+shedA: document.getElementById("shed-A"),
+shedA: document.getElementById("shed-B"),
+shedA: document.getElementById("shed-C"),
+shedA: document.getElementById("shed-D"),
+  }
