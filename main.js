@@ -1,44 +1,84 @@
-const shedData={
-  A:510,
-  B:308,
-  C:486,
-  D:572
-}
-const leapYear={
-  January:31,
-  February:28,
-  March:31,
-  April:30,
-  May:31,
-  June:30,
-  July:31,
-  August:31,
-  September:30,
-  October:31,
-  November:30,
-  December:31
-}
-function totalProduction(){
-let total=0
-Object.keys(shedData).forEach(key=>{
-  total+=shedData[key]
-})
-return total
-}
-console.log(totalProduction())
+let selling_price = 45; //cost of milk per litre
+var sheds = [{
+        name: "shed A",
+        averageProduction: 510,
+    },
+    {
+        name: "shed B",
+        averageProduction: 308,
+    },
+    {
+        name: "shed C",
+        averageProduction: 486,
+    },
+    {
+        name: "shed D",
+        averageProduction: 572,
+    },
+];
 
-function brooksideData(price,time){
-  if(time.toUpperCase()==="WEEKLY"){
-    return `Your weekly income will be Ksh${totalProduction()*7*price}`
-  }else if(time.toUpperCase()==="YEARLY"){
-    return `Your yearly income will be Ksh${totalProduction()*365*price}`
+var allProduction = function(e) {
+    let sum = 0;
+    for (let i = 0; i < e.length; i++) {
+        sum += e[i].averageProduction;
+        if (i == e.length - 1) {
+            return sum;
+        }
+    }
+};
 
-  }
-}
-function leapYearIncome(price){
+var totalProduction = function(obj) {
+    for (let i = 0; i < obj.length; i++) {
+        console.log(
+            "Your production in " +
+            obj[i].name +
+            " " +
+            obj[i].averageProduction +
+            " litres per day"
+        );
+    }
+    console.log(
+        "The total production is " + allProduction(obj) + " litres per day"
+    );
 
-return Object.keys(leapYear).map(key=>{
-return `Your income for ${key} is Ksh ${leapYear[key]*totalProduction()*price}`
-})
+};
+totalProduction(sheds);
+var months = {
+    January: 31,
+    February: 29,
+    March: 31,
+    April: 30,
+    May: 31,
+    June: 30,
+    July: 31,
+    August: 31,
+    September: 30,
+    October: 31,
+    November: 30,
+    December: 31,
+};
+var sellingPricePerLitre = 45;
+
+function incomeOverTime(selling_price, time) {
+    if (time == "weekly") {
+        let week = allProduction(sheds) * 7 * selling_price;
+        console.log("Your weekly income will be ksh " + week);
+    } else if (time == "yearly") {
+        let sum = 0;
+        for (let values of Object.values(months)) {
+            sum = values * allProduction(sheds) * selling_price;
+        };
+        console.log("Your yearly income will be Ksh " + sum);
+    }
 }
-console.log(leapYearIncome(45))
+incomeOverTime(sellingPricePerLitre, "weekly");
+incomeOverTime(sellingPricePerLitre, "yearly");
+
+function incomePerMonth(selling_price) {
+    let monthlyProduction;
+    for (let [keys, values] of Object.entries(months)) {
+        monthlyProduction = values * allProduction(sheds) * selling_price;
+        console.log("Your income for " + keys + " is " + monthlyProduction);
+    }
+}
+incomePerMonth(sellingPricePerLitre);
