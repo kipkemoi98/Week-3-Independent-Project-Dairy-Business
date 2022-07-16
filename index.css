@@ -8,6 +8,7 @@ body{
   background-image: url(assets/cowimage.jpeg);
    background-color: #1e2f6e;
 }
+
 /* HEADINGS*/
 #heading{
   display: flex;
@@ -19,4 +20,18 @@ body{
   height: 80px;
   margin-top: 0px;
 
+}
+/* OUTPUT */
+.output{
+  overflow: auto;
+  width: 50%;
+  box-shadow:0px 0px 10px rgb(150, 179, 169);
+  background-color: rgb(25, 49, 41);
+  border-radius: 4px;
+  font-size: 16px;
+  height: 550px;
+  
+}
+#output-pro{
+  text-align: center;
 }
