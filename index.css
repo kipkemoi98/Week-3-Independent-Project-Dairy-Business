@@ -5,7 +5,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
   font-size: 28px;
   box-sizing: border-box;
-  background-image: url(assets/cow image.jpeg)
+  background-image: url(assets/image1.jpeg)
 }
 #heading{
   display: flex;
