@@ -14,31 +14,31 @@
     <h3 id="heading">Dairy Business Productions</h3>
     <div class="milkproduce">
         <div class="data-input">
-            <!-- <form action="submit" onsubmit="totalproduce();"> -->
-            <h4>Fill and submit the following form to get your total produce</h4>
-            <div id="sheds">
-                <label for="shed-A">Shed A: Milk (Litre)</label>
-                <input id="q" type="number">
-            </div>
+            <!-- <form action="submit" onsubmit="t();"> -->
+                <h4>Fill and submit the following form to get your total produce</h4>
+                <div id="sheds">
+                    <label for="shed-A">Shed A: Milk (Litre)</label>
+                    <input id="q" type="number">
+                </div>
 
-            <div id="sheds">
-                <label for="shed-B">Shed B: Milk (Litre)</label>
-                <input id="z" type="number">
-            </div>
-            <div id="sheds">
-                <label for="shed-C">Shed C: Milk (Litre)</label>
-                <input id="y" type="number">
-            </div>
-            <div id="sheds">
-                <label for="shed-D">Shed D: Milk (Litre)</label>
-                <input id="p" type="number">
-            </div>
-            <div>
-                 <label for="total">Total Productions</label>
-                <input id="t" type="number">
-            </div>
-            <button id="submit-btn" onclick="submit-btn">Submit</button>
-            <button id="reset-results" type="reset" onclick="reset-results();">Reset</button>
+                <div id="sheds">
+                    <label for="shed-B">Shed B: Milk (Litre)</label>
+                    <input id="z" type="number">
+                </div>
+                <div id="sheds">
+                    <label for="shed-C">Shed C: Milk (Litre)</label>
+                    <input id="y" type="number">
+                </div>
+                <div id="sheds">
+                    <label for="shed-D">Shed D: Milk (Litre)</label>
+                    <input id="p" type="number">
+                </div>
+                <div>
+                    <label for="total">Total Productions</label>
+                    <input id="t" type="number">
+                </div>
+                <button id="submit-btn" onclick="submit-btn">Submit</button>
+                <button id="reset-results" type="reset" onclick="reset-results();">Reset</button>
             </form>
         </div>
         <div class="output">
@@ -51,15 +51,14 @@
         </div>
         <div class="btn">
             <button id="btn">income Over Time</button>
+            <div class="income">
+                <output id="weeklyoutput"></output>
+                <output id="weeklyoutput"></output>
+            </div>
+            <div class="leapYear">
+                <output id="LeapYearReport"></output>
+            </div>
         </div>
-        <div class="income">
-            <output id="weeklyoutput"></output>
-            <output id="weeklyoutput"></output>
-        </div>
-        <div class="yearlyre">
-            <output id="reportpermonth"></output>
-        </div>
-
         <script src="main.js"></script>
 </body>
 
