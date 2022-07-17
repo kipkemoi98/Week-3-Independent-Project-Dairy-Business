@@ -13,9 +13,9 @@ document.getElementById("submit-btn").onclick=function(){
         document.getElementById("I").value="Your productions in shed D is " + p.value + " litres per day"
         document.getElementById("O").value="Your Total production is " + t.value + " litres per day"
 document.getElementById("btn").onclick = function(){
-    let price = 45 ;
-    let weeklyoutput = total *prce * 7;
-    let yearlyoutput = total *prce * 365;
+    const price = 45 ;
+    const weeklyoutput = t.value *price * 7;
+    const yearlyoutput = t.value *price * 365;
     document.getElementById("weeklyoutput").value = "Your weekly income will be Ksh "+ weeklyoutput;
     document.getElementById("yearlyoutput").value = "Your Yearly income will be Ksh "+ yearlyoutput;
 }
